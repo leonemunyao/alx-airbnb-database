@@ -1,16 +1,10 @@
-## Seeding the database with sample data
-
----
+# Seed Data Documentation
 
 This document provides a comprehensive explanation of the sample data inserted into the Airbnb database through the `seed.sql` file. The seed data creates a realistic scenario with users, properties, bookings, payments, reviews, and messages to demonstrate the database functionality.
-
----
 
 ## Overview
 
 The seed data populates six main tables with interconnected sample records that simulate real-world usage of an Airbnb-like platform. The data includes three users with different roles, two properties, bookings, payments, reviews, and messages between users.
-
---- 
 
 ## Table Data Breakdown
 
@@ -36,8 +30,6 @@ The User table contains three sample users representing different roles in the s
 - All users are created with the current timestamp
 - Password hashes are simplified for demonstration purposes
 
----
-
 ### 🏠 Property Table
 
 Two luxury properties are listed, both owned by the same host:
@@ -59,8 +51,6 @@ Two luxury properties are listed, both owned by the same host:
 - **Jumeirah Beach Hotel** is a premium 5-star property at 120,000 KES per night
 - Both properties are owned by Jude Bellingham (the host)
 - Prices reflect luxury accommodations in Kenyan Shillings
-
----
 
 ### 📅 Booking Table
 
@@ -84,8 +74,6 @@ Two bookings are made by the same guest for different properties:
 - Total prices reflect: (nights × price_per_night) + potential fees
 - Different booking statuses demonstrate various stages of the booking process
 
----
-
 ### 💳 Payment Table
 
 Payment records correspond to both bookings:
@@ -104,8 +92,6 @@ Payment records correspond to both bookings:
 - **Second payment**: M-Pesa payment (popular mobile payment in Kenya) for the Jumeirah booking
 - Both payments are processed at the current timestamp
 - Demonstrates different payment methods available in the system
-
----
 
 ### 🌟 Review Table
 
@@ -126,8 +112,6 @@ Two reviews are left by the guest for both properties:
 - **Jumeirah Beach Hotel** receives a **4-star rating** with positive feedback and intent to return
 - Reviews provide valuable feedback for future guests and property improvement
 
----
-
 ### 💬 Message Table
 
 A conversation between the guest and host regarding availability:
@@ -146,10 +130,6 @@ A conversation between the guest and host regarding availability:
 - Demonstrates the messaging system facilitating communication between users
 - Messages are timestamped for proper conversation tracking
 
----
-
----
-
 ## Data Relationships
 
 The seed data demonstrates key relationships in the database:
@@ -161,8 +141,6 @@ The seed data demonstrates key relationships in the database:
 5. **Property-Review Relationship**: Both properties have reviews from the guest
 6. **User-Message Relationship**: Users communicate through the messaging system
 
----
-
 ## Business Logic Demonstrated
 
 The seed data showcases several important business scenarios:
@@ -173,8 +151,6 @@ The seed data showcases several important business scenarios:
 - **Multiple payment methods**: Credit card and mobile payments
 - **Review system**: Guest feedback on properties
 - **Communication**: Host-guest messaging for inquiries
-
-----
 
 ## Data Integrity Notes
 
