@@ -18,7 +18,7 @@ INSERT INTO Booking (booking_id, property_id, user_id, start_date, end_date, tot
 -- 💳 Payment Table
 INSERT INTO Payment (payment_id, booking_id, amount, payment_date, payment_method) VALUES
 ('pay-001', 'book-001', 320000.00, CURRENT_TIMESTAMP, 'credit_card'),
-('pay-002', 'book-002', 360000.00, CURRENT_TIMESTAMP, 'mpesa');
+('pay-002', 'book-002', 360000.00, CURRENT_TIMESTAMP, 'paypal');
 
 -- 🌟 Review Table
 INSERT INTO Review (review_id, property_id, user_id, rating, comment, created_at) VALUES
