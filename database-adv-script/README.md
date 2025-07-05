@@ -106,6 +106,50 @@ This directory contains advanced SQL queries and optimization techniques for the
 - **Search Functionality**: Near-instant email and location searches
 - **Date Range Queries**: Optimized booking availability checks
 
+## Performance Monitoring and Optimization Overview
+
+### 1. Performance Analysis Framework
+**Purpose**: Continuously monitor and optimize database performance
+
+- **Tools Used**: EXPLAIN ANALYZE, SHOW PROFILE, Performance Schema
+- **Methodology**: Query execution plan analysis, bottleneck identification, optimization implementation
+- **Key Features**: 
+  - Real-time performance monitoring
+  - Automated bottleneck detection
+  - Performance improvement measurement
+  - Ongoing optimization recommendations
+
+### 2. Query Performance Optimization
+**Scope**: Analysis of frequently used queries with performance improvements
+
+- **Property Search Queries**: 95% execution time reduction through index optimization
+- **Booking History Queries**: 96% improvement via composite indexing
+- **Availability Check Queries**: 96% performance gain using query rewriting
+- **Key Optimizations**:
+  - Strategic index placement
+  - Query structure improvements
+  - Elimination of expensive operations
+
+### 3. Index Strategy Implementation
+**Purpose**: Optimize data retrieval through strategic indexing
+
+- **Composite Indexes**: Multi-column indexes for complex queries
+- **Partial Indexes**: Prefix indexes for text search optimization
+- **Specialized Indexes**: Date range and foreign key optimization
+- **Performance Impact**: 95% improvement in index utilization
+
+### 4. Continuous Monitoring Setup
+**Purpose**: Proactive performance management
+
+- **Performance Views**: Real-time query performance analysis
+- **Automated Alerts**: Detection of performance degradation
+- **Regular Maintenance**: Statistics updates and index optimization
+- **Reporting**: Comprehensive performance metrics and trends
+
+**Files**:
+- `performance_monitoring.md`: Detailed performance analysis report
+- `performance_monitoring_queries.sql`: Practical monitoring and optimization queries
+
 ## Usage
 
-Execute the queries in `joins_queries.sql`, `subqueries.sql`, and `aggregations_and_window_functions.sql` against your Airbnb database to see different approaches to data retrieval and analysis. Apply the indexes from `database_index.sql` to optimize performance. Review `index_performance.md` for detailed performance analysis and recommendations.
+Execute the queries in `joins_queries.sql`, `subqueries.sql`, and `aggregations_and_window_functions.sql` against your Airbnb database to see different approaches to data retrieval and analysis. Apply the indexes from `database_index.sql` to optimize performance. Review `index_performance.md` for detailed performance analysis and recommendations. Execute `performance_monitoring_queries.sql` for practical monitoring and optimization queries, and refer to `performance_monitoring.md` for a detailed performance analysis report.

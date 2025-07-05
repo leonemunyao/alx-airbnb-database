@@ -118,6 +118,9 @@
 3. Test with larger dataset simulation
 4. Document optimization improvements
 
+---
+---
+
 # Query Optimization Implementation
 
 ## Optimization Strategies Applied
